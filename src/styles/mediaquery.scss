@@ -1,0 +1,44 @@
+@media (max-width: 785px) {
+  .login {
+    padding: 0;
+  }
+  .login > section > form > button {
+    @include myButton;
+  }
+  .header {
+    position: relative;
+    padding: 1rem;
+    > article {
+      text-align: right;
+      position: absolute;
+      top: 4rem;
+      left: 50%;
+      transform: translateX(-50%);
+      > a {
+        @include myButton(7rem, 0.4rem);
+      }
+    }
+  }
+
+  .loginSection {
+    position: absolute;
+    top: 7.5rem;
+  }
+}
+@media (min-width: 460px) {
+  .header {
+    > article {
+      position: static;
+      top: 3rem;
+      > a {
+        @include myButton(7rem, 0.4rem);
+      }
+    }
+  }
+  
+}
+@media (max-width: 420px){
+  .todoBtn {
+    flex-direction: column;
+  }
+}
